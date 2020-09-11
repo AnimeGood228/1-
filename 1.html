@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.box{
+			width: 1400px;
+			height: 950px;
+			background-color: green;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		.box2{
+			height: 250px;
+			width: 1400px;
+			background-color: red;
+			display: flex;
+		}
+		.box3{
+			width: 1400px;
+			height: 700px;
+			background-color: red;
+			margin-top: 100px;
+			display: flex;
+			padding-top:20px;
+		}
+		.jpg{
+			width: 400px;
+			height: 590px;
+			background-color:blue;
+			margin-left: 10px;
+			padding-top: 90px;
+		}
+		.jpg2{
+			width: 940px;
+			height: 590px;
+			background-color:blue;
+			margin-left: 20px;
+			margin-right: 20px;
+			padding-top: 90px;
+		}
+		.fpr{
+			height: 250px;
+			width: 1000px;
+			background-color: blue;
+		}
+		.fpr2{
+			height: 250px;
+			width: 350px;
+			background-color: blue;
+			margin-left: 50px;
+		}
+		.name{
+			font-family: arial;
+			font-weight: 20px;
+		}
+		.btn{
+			width: 200px;
+			height: 60px;
+			margin-left: 50px;
+		}
+		.jpg3{
+			width: 300px;
+			height: 500px;
+			margin-left: 50px;
+		}
+		.h{
+			font-family: arial;
+		}
+		.point{
+			font-family: arial;
+			font-weight: 5px;
+			margin-left: 80px;
+		}
+		.star{
+			width: 140px; 
+			height: 120px; 
+			margin-left: 60px;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="box2">
+			<div class="fpr">
+				<h1 class="name">семь смертных грехов 3 сезон</h1>
+
+			</div>
+			<div class="fpr2">
+				<img class="star" src="star.png">
+				<h1 class="point">-1000</h1>
+			</div>
+		</div>
+		<div class="box3">
+			<div class="jpg">
+				<img class="jpg3" src="1.jpg">
+				<button class="btn">Добавить в список</button>
+			</div>
+			<div class="jpg2">
+				<iframe width="940" height="415" src="https://www.youtube.com/embed/F9WJJFKhbGY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<h1 class="h">больще всего не понравилось рисовка прочев мангу ожидал оч большой экшн и вот моё ожидание привело к тому что я увидел унылую рисовку не как 1 и 2 сезоне если сказать что там большой обьем то к примеру боец баки </h1>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		let b = document.querySelector(".btn");
+		let h1 = document.querySelector(".point");
+		let n = -1000;
+		b.onclick = function(){
+			alert("добавлен в список")
+		} 
+		let sr = document.querySelector(".star")
+		sr.onclick = function(){
+			n = n - 1;
+			h1.innerHTML = n;
+		}
+	</script>
+</body>
+</html>
